@@ -16,6 +16,12 @@ class HomePage extends Component {
         })});
     }
 
+    // componentDidUpdate() {
+    //     axios.get(BASE_URL).then(data=>{
+    //         this.setState({
+    //         movies: data.data.results
+    //     })});
+    // }
   
 
     render() {

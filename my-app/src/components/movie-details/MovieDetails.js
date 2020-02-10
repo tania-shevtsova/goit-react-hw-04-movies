@@ -33,7 +33,7 @@ const activeStyle={
 const MovieDetails = ({ movies = [], onGoBack}) => {
   return (
     <>
-         <button onClick={onGoBack}>{`\u25c0`} Go back</button>   
+         <button onClick={onGoBack}>{`\u25c0`} Go back</button>
 
     {movies &&  
       <div style={div}>
