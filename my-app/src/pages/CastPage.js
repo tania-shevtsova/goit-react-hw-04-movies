@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-import shortid from 'shortid'
+import shortid from "shortid";
 
 class CastPage extends Component {
   state = { movies: [] };
@@ -14,7 +14,6 @@ class CastPage extends Component {
       this.setState({
         movies: movies.data.cast
       })
-    
     );
   };
 
@@ -22,15 +21,24 @@ class CastPage extends Component {
     const { movies } = this.state;
     return (
       <>
-      {movies.length>0 ? <ul>
-          {movies.map(el => (
-            <li key={shortid()}> 
-                {el.profile_path &&  <img  src={`https://image.tmdb.org/t/p/w200${el.profile_path}`} alt=""/>}
+        {movies.length > 0 ? (
+          <ul>
+            {movies.map(el => (
+              <li key={shortid()}>
+                {el.profile_path && (
+                  <img
+                    src={`https://image.tmdb.org/t/p/w200${el.profile_path}`}
+                    alt=""
+                  />
+                )}
                 <p>{el.name}</p>
                 <p>Character: {el.character}</p>
-                </li>
-          ))}
-        </ul> : <p>This list is empty!</p>}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>This list is empty!</p>
+        )}
       </>
     );
   }

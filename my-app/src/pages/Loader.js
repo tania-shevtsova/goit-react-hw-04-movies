@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { css } from "@emotion/core";
 import DotLoader from "react-spinners/ClipLoader";
 
@@ -6,8 +6,8 @@ const override = css`
   display: block;
   margin: 0 auto;
   border-color: red;
-  `;
- 
+`;
+
 class Loader extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +15,7 @@ class Loader extends React.Component {
       loading: true
     };
   }
- 
+
   render() {
     return (
       <div className="sweet-loading">
