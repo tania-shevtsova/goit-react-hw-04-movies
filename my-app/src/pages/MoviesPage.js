@@ -3,7 +3,7 @@ import PNotify from "pnotify/dist/es/PNotify";
 import PNotifyBrightTheme from "../../node_modules/pnotify/dist/PNotifyBrightTheme.css";
 import axios from "axios";
 import shortid from "shortid";
-import { NavLink, Redirect } from "react-router-dom";
+import { NavLink, Redirect, Link } from "react-router-dom";
 const queryString = require("query-string");
 
 const activeStyle = {
